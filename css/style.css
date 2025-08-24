@@ -280,99 +280,78 @@ body {
     color: #B5C096;
 }
 
-/* Адаптивность только для мобильных устройств */
+/* Адаптивность */
+@media (max-width: 1200px) {
+    .header__title {
+        font-size: 48px;
+        line-height: 1.2;
+    }
+    
+    .start-header {
+        font-size: 48px;
+        line-height: 1.2;
+    }
+}
+
+@media (max-width: 992px) {
+    .header__title {
+        font-size: 40px;
+    }
+    
+    .main-title {
+        font-size: 30px;
+    }
+    
+    .start-header {
+        font-size: 40px;
+    }
+    
+    .footer-links {
+        gap: 30px;
+    }
+    
+    .footer-links__block {
+        max-width: 140px;
+    }
+}
+
 @media (max-width: 768px) {
-    body {
-        width: 100%;
-        margin: 0 auto;
-    }
-    
     .header {
-        height: auto;
-        min-height: 500px;
-        margin-bottom: 80px;
-        background-size: cover;
-        background-position: center;
-    }
-    
-    .header__logo {
-        margin-left: 20px;
-        padding-top: 20px;
-        text-align: left;
-    }
-    
-    .header__text {
-        width: 90%;
-        position: relative;
-        top: 100px;
-        left: 20px;
-        text-align: left;
+        min-height: 600px;
+        margin-bottom: 100px;
     }
     
     .header__title {
         font-size: 32px;
-        line-height: 1.2;
     }
     
     .header__paragraph {
         font-size: 14px;
-        line-height: 1.5;
     }
     
     .main {
-        width: 100%;
-        height: auto;
-        margin: 0 auto 80px;
-        padding: 0 20px;
+        margin-bottom: 100px;
     }
     
     .main-title {
         font-size: 26px;
-        width: 100%;
-        text-align: center;
-    }
-    
-    .main-info {
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
     }
     
     .main-section {
-        width: 100%;
+        padding: 20px;
         max-width: 300px;
-        height: auto;
-        padding: 25px;
-        text-align: center;
     }
     
     .main-section__title {
         font-size: 20px;
-        width: 100%;
-        height: auto;
-    }
-    
-    .main-section__text {
-        width: 100%;
-        height: auto;
     }
     
     .start {
-        width: 100%;
-        height: auto;
-        position: static;
         padding: 50px 20px;
-        text-align: center;
-    }
-    
-    .start__title {
-        width: 100%;
-        height: auto;
     }
     
     .start-header {
         font-size: 32px;
-        line-height: 1.2;
     }
     
     .footer {
@@ -381,84 +360,63 @@ body {
     
     .footer-contacts {
         flex-direction: column;
-        width: 100%;
-        height: auto;
         gap: 30px;
-        margin-bottom: 40px;
-    }
-    
-    .footer-contacts__phone {
-        margin-right: 0;
     }
     
     .footer-links {
-        width: 100%;
-        height: auto;
         flex-direction: column;
-        gap: 40px;
-        padding-top: 40px;
-        margin-bottom: 40px;
+        align-items: center;
+        gap: 30px;
     }
     
     .footer-links__block {
-        width: 100%;
-        margin-right: 0;
-        text-align: center;
+        max-width: 200px;
     }
     
-    .social {
-        width: 100%;
-        border-left: none;
-        border-top: 1px solid #5D6544;
-        padding: 40px 0 0;
-        margin-top: 20px;
-    }
-    
-    .footer-links__social {
-        justify-content: center;
-        gap: 15px;
-    }
-    
-    .footer-copyright {
-        width: 100%;
-    }
-    
-    .footer-copyright__logo {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
+    .footer-links__email {
+        font-size: 20px;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
+    .header {
+        min-height: 500px;
+        margin-bottom: 80px;
+    }
+    
     .header__title {
         font-size: 28px;
     }
     
-    .header__text {
-        left: 15px;
+    .header__logo a img {
+        width: 200px;
+        height: auto;
     }
     
     .main-title {
         font-size: 24px;
     }
     
+    .main-info {
+        gap: 20px;
+    }
+    
     .start-header {
         font-size: 28px;
     }
     
     .footer-links__email {
-        font-size: 20px;
+        font-size: 18px;
     }
     
     .footer-link__social {
-        width: 30px;
-        height: 30px;
+        width: 28px;
+        height: 28px;
         font-size: 16px;
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 480px) {
     .header__title {
         font-size: 24px;
     }
@@ -467,110 +425,19 @@ body {
         font-size: 24px;
     }
     
+    .footer-links__title,
+    .footer-links__link,
+    .footer-links__text,
+    .footer-contacts__title,
+    .footer-contacts__text {
+        font-size: 14px;
+    }
+    
     .footer-links__email {
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 
-/* Сохраняем десктопную версию для больших экранов */
-@media (min-width: 769px) {
-    .header {
-        height: 811px;
-        margin-bottom: 150px;
-    }
-    
-    .header__logo {
-        margin-left: 164px;
-        padding-top: 23px;
-        text-align: left;
-    }
-    
-    .header__text {
-        width: 616px;
-        height: 412px;
-        position: relative;
-        top: 187px;
-        left: 166px;
-        text-align: left;
-    }
-    
-    .main {
-        width: 1110px;
-        height: 461px;
-        margin: 0 auto 150px;
-    }
-    
-    .main-info {
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    .main-section {
-        width: 255px;
-        height: 309px;
-        padding: 36px;
-        text-align: left;
-    }
-    
-    .start {
-        width: 1275px;
-        height: 362px;
-        position: absolute;
-        top: 1575px;
-        padding-top: 70px;
-        padding-left: 164px;
-        padding-bottom: 71px;
-        text-align: left;
-    }
-    
-    .footer {
-        padding-top: 310px;
-        padding-left: 165px;
-    }
-    
-    .footer-contacts {
-        display: flex;
-        width: 456px;
-        height: 88px;
-        margin-bottom: 52px;
-    }
-    
-    .footer-links {
-        width: 1111px;
-        height: 320px;
-        display: flex;
-        padding-top: 60px;
-        margin-bottom: 60px;
-    }
-    
-    .footer-links__block {
-        width: 167px;
-        margin-right: 70px;
-        text-align: left;
-    }
-    
-    .social {
-        width: 322px;
-        border-left: 1px solid #5D6544;
-        padding-left: 100px;
-        text-align: left;
-    }
-    
-    .footer-links__social {
-        justify-content: space-between;
-        width: 171px;
-    }
-    
-    .footer-copyright {
-        width: 1111px;
-    }
-    
-    .footer-copyright__logo {
-        display: flex;
-        justify-content: space-between;
-        text-align: left;
-    }
-}
 
 
 
