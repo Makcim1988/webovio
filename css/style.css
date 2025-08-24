@@ -316,17 +316,49 @@ body {
 
 @media (max-width: 768px) {
     .header {
-        min-height: 600px;
-        margin-bottom: 100px;
-    }
-    
-    .header__title {
-        font-size: 32px;
-    }
-    
-    .header__paragraph {
-        font-size: 14px;
-    }
+    background-image: url("../img/bg.jpg");
+    background-position: center;
+    margin-bottom: 80px;
+}
+
+.header__logo {
+    margin-left: 164px;
+    padding-top: 23px;
+}
+
+.header__logo a img {
+    width: 256px;
+    height: 40px;
+}
+
+.header__text {
+    width: 616px;
+    height: 412px;
+    position: relative;
+    top: 187px;
+    left: 166px;
+    color: #ffffff;
+}
+
+.header__title {
+    font-size: 32px;
+    line-height: 36px;
+    font-family: "Poppins-Bold", Arial, sans-serif;
+}
+
+.header__paragraph {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.header__text a {
+    color: #ffffff;
+}
+
+.header__text a:hover {
+    color: #FFD723;
+}
+
     
     .main {
         margin-bottom: 100px;
@@ -436,6 +468,7 @@ body {
         font-size: 16px;
     }
 }
+
 
 
 
