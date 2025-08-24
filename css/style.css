@@ -332,7 +332,7 @@ body {
 }
 
 .header__text {
-    width: 616px;
+    width: 70%;
     height: 412px;
     position: relative;
     top: 187px;
@@ -468,6 +468,7 @@ body {
         font-size: 16px;
     }
 }
+
 
 
 
